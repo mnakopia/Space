@@ -1,4 +1,5 @@
-var jsonInfo= {"destinations": [
+var jsonInfo= {
+  "destinations": [
     {
       "name": "Moon",
       "images": {
@@ -38,8 +39,73 @@ var jsonInfo= {"destinations": [
       "description": "The only moon known to have a dense atmosphere other than Earth, Titan is a home away from home (just a few hundred degrees colder!). As a bonus, you get striking views of the Rings of Saturn.",
       "distance": "1.6 bil. km",
       "travel": "7 years"
+    }
+  ],
+  "crew": [
+    {
+      "name": "Douglas Hurley",
+      "images": {
+        "png": "./assets/crew/image-douglas-hurley.png",
+        "webp": "./assets/crew/image-douglas-hurley.webp"
+      },
+      "role": "Commander",
+      "bio": "Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2."
     },
-  ]};
+    {
+      "name": "Mark Shuttleworth",
+      "images": {
+        "png": "./assets/crew/image-mark-shuttleworth.png",
+        "webp": "./assets/crew/image-mark-shuttleworth.webp"
+      },
+      "role": "Mission Specialist",
+      "bio": "Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind the Linux-based Ubuntu operating system. Shuttleworth became the first South African to travel to space as a space tourist."
+    },
+    {
+      "name": "Victor Glover",
+      "images": {
+        "png": "./assets/crew/image-victor-glover.png",
+        "webp": "./assets/crew/image-victor-glover.webp"
+      },
+      "role": "Pilot",
+      "bio": "Pilot on the first operational flight of the SpaceX Crew Dragon to the International Space Station. Glover is a commander in the U.S. Navy where he pilots an F/A-18.He was a crew member of Expedition 64, and served as a station systems flight engineer."
+    },
+    {
+      "name": "Anousheh Ansari",
+      "images": {
+        "png": "./assets/crew/image-anousheh-ansari.png",
+        "webp": "./assets/crew/image-anousheh-ansari.webp"
+      },
+      "role": "Flight Engineer",
+      "bio": "Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. Ansari was the fourth self-funded space tourist, the first self-funded woman to fly to the ISS, and the first Iranian in space."
+    }
+  ],
+  "technology": [
+    {
+      "name": "Launch vehicle",
+      "images": {
+        "portrait": "./assets/technology/image-launch-vehicle-portrait.jpg",
+        "landscape": "./assets/technology/image-launch-vehicle-landscape.jpg"
+      },
+      "description": "A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!"
+    },
+    {
+      "name": "Spaceport",
+      "images": {
+        "portrait": "./assets/technology/image-spaceport-portrait.jpg",
+        "landscape": "./assets/technology/image-spaceport-landscape.jpg"
+      },
+      "description": "A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, by analogy to the seaport for ships or airport for aircraft. Based in the famous Cape Canaveral, our spaceport is ideally situated to take advantage of the Earth’s rotation for launch."
+    },
+    {
+      "name": "Space capsule",
+      "images": {
+        "portrait": "./assets/technology/image-space-capsule-portrait.jpg",
+        "landscape": "./assets/technology/image-space-capsule-landscape.jpg"
+      },
+      "description": "A space capsule is an often-crewed spacecraft that uses a blunt-body reentry capsule to reenter the Earth's atmosphere without wings. Our capsule is where you'll spend your time during the flight. It includes a space gym, cinema, and plenty of other activities to keep you entertained."
+    }
+  ]
+}
   var dest = JSON.parse(JSON.stringify(jsonInfo));
   var destinationName;
   function destinationChanger(destinationId) {
@@ -47,6 +113,8 @@ var jsonInfo= {"destinations": [
     var element = document.getElementById(destinationName);
 
     const items = document.querySelectorAll('.dest-link');
+    document.getElementById('moon').classList.remove("active");
+
 
     items.forEach(item => {
       item.addEventListener("click", function() {   
@@ -84,6 +152,59 @@ var jsonInfo= {"destinations": [
 
 
  }
+
+
+
+
+ function crewChanger(crewMemberId) {
+
+  var element = document.getElementById(crewMemberId);
+
+  const items = document.querySelectorAll('.crew-link');
+  document.getElementById('AnoushehAnsari').classList.remove("active");
+
+
+  items.forEach(item => {
+    item.addEventListener("click", function() {   
+     items .forEach(a=>{
+        a.classList.remove("active");
+      });
+       item.classList.add("active");
+      
+    });  
+  });
+  
+  switch (crewMemberId) {
+    case 0:
+      crewMemberName = "DouglasHurley";
+      break;
+    case 1:
+      crewMemberName = "MarkShuttleworth";
+      break;
+    case 2:
+      crewMemberName = "VictorGlover";
+      break;
+    case 3:
+      crewMemberName = "AnoushehAnsari";
+      break;
+    
+  }
+  var element = document.getElementById(crewMemberName);
+  element.classList.add("active");
+
+  document.getElementById('crew-member').innerHTML = dest.crew[crewMemberId].name;
+  document.getElementById('position').innerHTML = dest.crew[crewMemberId].role;
+  document.getElementById('crewMemberInfo').innerHTML = dest.crew[crewMemberId].bio;
+  document.getElementById('crewMemberImg').src = dest.crew[crewMemberId].images.webp;
+
+
+}
+
+
+
+
+
+
 
 
 

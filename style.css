@@ -273,6 +273,23 @@ cursor: pointer;
     margin-bottom: 40px;
     margin-top: 10px;
 }
+.crew-menu{
+display: flex;
+margin-top: 50px;
+}
+
+.crew-link{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #979797;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.crew-link.active{
+    background-color: white;
+}
 /* Crew */
 
 
