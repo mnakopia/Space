@@ -32,40 +32,42 @@
   <h2 class="headers">01 Pick your destination</h2>
   
   
-  <img src="./assets/destination/image-mars.webp" alt="destination" />
+  <img src="./assets/destination/image-moon.webp" alt="destination" id="destinationImg" />
 </div>
   <div class="about-destination">
 <div class="destination-menu">
-  <a class="dest-link">Moon</a>
-  <a class="dest-link active">Mars</a>
-  <a class="dest-link">Europa</a>
-  <a class="dest-link">Titan</a>
+  <a class="dest-link" id="moon" onclick="destinationChanger(0)">Moon</a>
+  <a class="dest-link" id="mars" onclick="destinationChanger(1)">Mars</a>
+  <a class="dest-link" id="europa" onclick="destinationChanger(2)">Europa</a>
+  <a class="dest-link" id="titan" onclick="destinationChanger(3)">Titan</a>
 </div>
 
-<h1 class="destination-name">  Mars
+<h1 class="destination-name" id="destinationName">  MOON
+
 </h1>
-<p class="dest-info">
-  Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, 
-  the tallest planetary mountain in our solar system. It’s two and a half times 
-  the size of Everest!
+<p class="dest-info" id="destinationInfo">
+  See Our Planet As You’ve Never Seen It Before. A Perfect Relaxing Trip Away To Help Regain Perspective And Come Back Refreshed. While You’re There, Take In Some History By Visiting The Luna 2 And Apollo 11 Landing Sites.
 </p>
 <div class="hr"></div>
 <div class="distance-info">
 
   <div class="avg-distance">
     <h5>Avg. distance</h5>
-   <h2>225 mil. km</h2> 
+   <h2 id="avgDistance">384,400 KM</h2> 
     
   </div>
   
   <div class="travel-time-info">
     <h5>Est. travel time</h5>
-    <h2>9 months</h2> 
+    <h2 id="travelTime">3 DAYS</h2> 
     
   </div>
 </div>
 
 </div>
 </main>
+
+<script type="text/javascript" src="data.json"></script>
+<script type="text/javascript" src="Js.js"></script>
 </body>
 </html>
