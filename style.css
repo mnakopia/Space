@@ -11,8 +11,15 @@
 
 body{
 color: white;
+font-family: Bellefair;
+font-weight: 100;
+text-transform: uppercase;
 }
 
+
+.index-text p, .dest-info, .crew-member-info, .about-technology{
+text-transform: capitalize;
+}
 
 .index-bg{
 background-image: url(./assets/home/background-home-desktop.jpg);
@@ -85,9 +92,7 @@ background-repeat: no-repeat;
     justify-content: center;
 }
 .nav-links{
-    text-transform: uppercase;
     font-size: 14px;
-    font-family: Bellefair;
     padding: 35px 0;
     margin: 0 30px;
     letter-spacing: 1px;
@@ -119,8 +124,6 @@ background-repeat: no-repeat;
 }
 
 .explore p{
-    font-family: Bellefair;
-    text-transform: uppercase; 
     font-size: 32px;
     letter-spacing: 2px;
     
@@ -136,8 +139,6 @@ background-repeat: no-repeat;
 
 
 .index-text h1{
-    font-family: Bellefair;
-    text-transform: uppercase; 
     font-weight: 100;
     padding: 0;
     font-size: 150px;
@@ -147,12 +148,11 @@ background-repeat: no-repeat;
 .index-text h3{
     color: #D0D6F9;
     font-family: Barlow;
-    text-transform: uppercase; 
     font-weight: 100; 
     letter-spacing: 2px;
     font-size: 23px;
 }
-.index-text p{
+.index-text p, .about-technology{
     color: #D0D6F9;
     font-family: Barlow;
     font-size: 18px;
@@ -180,11 +180,9 @@ background-repeat: no-repeat;
     width: 50%;
 }
 .destination-name{
-    font-family: Bellefair;
     font-size: 100px;
     font-weight: 100;
     margin: 0;
-    text-transform: uppercase;
 
 
 }
@@ -205,16 +203,13 @@ background-repeat: no-repeat;
 .distance-info h2{
     font-size: 28px;
     margin-top: 10px;
-    font-family: Bellefair;
     font-weight: 100;
-    text-transform: uppercase;
 }
 
 .distance-info h5{
     font-family: Barlow;
     font-size: 14px;
     color: #D0D6F9;
-    text-transform: uppercase;
     font-weight: 100;
     margin-bottom: 0;
     opacity: 0.6;
@@ -234,7 +229,6 @@ background-repeat: no-repeat;
 
 .dest-link{
 margin-right:20px;
-text-transform: uppercase;
 font-family:Bellefair;
 font-weight: 100;
 padding-bottom: 5px;
@@ -266,8 +260,6 @@ padding-bottom: 5px;
 
 #position{
     margin-top: 130px;
-    text-transform: uppercase;
-    font-family:Bellefair;
     font-weight: 100;    
     font-size: 24px;
     color: #979797;
@@ -275,12 +267,63 @@ padding-bottom: 5px;
 }
 
 #crew-member{
-    text-transform: uppercase;
-    font-family:Bellefair;
+    font-weight: 100;    
+    font-size: 50px;
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+/* Crew */
+
+
+
+.technology-main{
+    margin-left: 130px;
+    display: flex;
+    position: absolute;
+    bottom: 30px;
+    right: 0;
+}
+
+.technology-info{
+display: flex;
+margin-top: 50px;
+}
+
+.square{
+width: 80px;
+height: 80px;
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+border:1px solid #D0D6F9;
+margin: 35px 50px 35px 0;
+font-size: 24px;
+}
+
+.square.active{
+    background-color: #ffffff;
+    color:#0B0D17 ;
+}
+
+.about-technology{
+    margin-right: 200px;
+    width: 450px;
+}
+
+#technology-name{
     font-weight: 100;    
     font-size: 50px;
     margin-bottom: 40px;
     margin-top: 10px;
 }
 
-/* Crew */
+.terminology{
+    color: #D0D6F9;
+    font-weight: 100;    
+    font-size: 16px;
+    margin-bottom: 0;
+    margin-top: 40px;
+}
+
+
