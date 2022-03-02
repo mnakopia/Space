@@ -26,6 +26,18 @@ background-repeat: no-repeat;
     background-repeat: no-repeat; 
 }
 
+.crew-bg{
+    background-image: url(./assets/crew/background-crew-desktop.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat; 
+}
+
+.technology-bg{
+    background-image: url(./assets/technology/background-technology-desktop.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat; 
+}
+
 .header{
     width: 100%;
     margin-left: 7px;
