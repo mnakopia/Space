@@ -201,6 +201,46 @@ var jsonInfo= {
 }
 
 
+function technologyChanger(technologyId) {
+
+  var element = document.getElementById(technologyId);
+
+  const items = document.querySelectorAll('.square');
+  document.getElementById('launchVehicle').classList.remove("active");
+
+
+  items.forEach(item => {
+    item.addEventListener("click", function() {   
+     items .forEach(a=>{
+        a.classList.remove("active");
+      });
+       item.classList.add("active");
+      
+    });  
+  });
+  
+  switch (technologyId) {
+    case 0:
+      crewMemberName = "launchVehicle";
+      break;
+    case 1:
+      crewMemberName = "capsule";
+      break;
+    case 2:
+      crewMemberName = "spaceport";
+      break;
+  
+    
+  }
+  var element = document.getElementById(crewMemberName);
+  element.classList.add("active");
+
+  document.getElementById('technology-name').innerHTML = dest.technology[technologyId].name;
+  document.getElementById('aboutTechnology').innerHTML = dest.technology[technologyId].description;
+  document.getElementById('technologyImg').src = dest.technology[technologyId].images.portrait;
+
+
+}
 
 
 
