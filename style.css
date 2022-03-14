@@ -14,17 +14,22 @@ color: white;
 font-family: Bellefair;
 font-weight: 100;
 text-transform: uppercase;
+width: 100%;
+height: 100%;
+margin: 0;
 }
 
 
-.index-text p, .dest-info, .crew-member-info, .about-technology{
+.index-space-text p, .dest-info, .crew-member-info, .about-technology{
 text-transform: capitalize;
 }
 
 .index-bg{
 background-image: url(./assets/home/background-home-desktop.jpg);
-background-size: 100%;
+background-size: cover;
 background-repeat: no-repeat;
+width: 100%;
+height: 100%;
 }
 
 .destination-bg{
@@ -59,6 +64,8 @@ background-repeat: no-repeat;
 .header{
     width: 100%;
     margin-left: 7px;
+    position: fixed;
+    top: 0;
 }
 .logo{
     position: fixed;
@@ -79,6 +86,10 @@ background-repeat: no-repeat;
     left: 100px;
     z-index: 2;
     opacity: 0.3;
+}
+
+.hamburger-menu,.hamburger-menu-close{
+    display: none;
 }
 .nav-div{
     backdrop-filter: blur(25px);
@@ -109,9 +120,8 @@ background-repeat: no-repeat;
     font-size: 15px;
 }
 .explore{
-    position: absolute;
-    right: 10%;
-    bottom: 15%;
+    margin-top: 7%;
+    margin-right: 15%;
     height: 274px;
     width: 274px;
     background-color: #ffffff;
@@ -131,28 +141,33 @@ background-repeat: no-repeat;
 
 
 .index-text{
-    position: absolute;
+margin-top: 250px;
+margin-left: 10%;
+display: flex;
+justify-content: space-between;
+
+
+}
+.index-space-text{
     width: 450px;
-    bottom: 10%;
-    left:10%;
+
 }
 
-
-.index-text h1{
+.index-space-text h1{
     font-weight: 100;
     padding: 0;
     font-size: 150px;
     margin:10px 0 10px -15px;
 }
 
-.index-text h3{
+.index-space-text h3{
     color: #D0D6F9;
     font-family: Barlow;
     font-weight: 100; 
     letter-spacing: 2px;
     font-size: 23px;
 }
-.index-text p, .about-technology{
+.index-space-text p, .about-technology{
     color: #D0D6F9;
     font-family: Barlow;
     font-size: 18px;
@@ -317,6 +332,8 @@ align-items: center;
 border:1px solid #D0D6F9;
 margin: 35px 50px 35px 0;
 font-size: 24px;
+cursor: pointer;
+
 }
 
 .square.active{
@@ -345,3 +362,90 @@ font-size: 24px;
 }
 
 
+
+@media only screen and (max-width: 500px) {
+    .index-bg{
+        background-image: url(./assets/home/background-home-mobile.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+        }
+        
+        .destination-bg{
+            background-image: url(./assets/destination/background-destination-desktop.jpg);
+            background-size: 100%;
+            background-repeat: no-repeat; 
+        }
+        
+        .crew-bg{
+            background-image: url(./assets/crew/background-crew-desktop.jpg);
+            background-size: 100%;
+            background-repeat: no-repeat; 
+        }
+        
+        .technology-bg{
+            background-image: url(./assets/technology/background-technology-desktop.jpg);
+            background-size: 100%;
+            background-repeat: no-repeat; 
+        }
+
+.nav-div, .hr{
+    display: none;
+}
+
+.hamburger-menu{
+    display: block;
+    position: absolute;
+    right: 30px;
+    top: 40px;
+}
+
+.index-text{
+    display: block;
+    margin: 140px auto 0;
+    text-align: center;
+
+}
+.index-space-text{
+    max-width: 100%;
+}
+
+.index-space-text h1{
+    font-size: 90px;
+}
+
+.index-space-text h3{
+    font-size: 16px;
+}
+
+.index-space-text p{
+    font-size: 14px;
+    max-width: 80%;
+margin: 0 auto;    
+}
+
+.explore{
+    margin: 30px auto 0;
+    width: 180px;
+    height: 180px;
+}
+
+
+.explore p{
+    font-size: 22px;
+}
+
+.logo {
+    
+    margin: 30px 25px 0;}
+
+    .logo-img {
+        width: 40px;
+        height: auto;
+    }
+
+
+
+
+  }
