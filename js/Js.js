@@ -106,6 +106,8 @@ var jsonInfo= {
     }
   ]
 }
+
+  var showHamburgerMenu =true;
   var dest = JSON.parse(JSON.stringify(jsonInfo));
   var destinationName;
   function destinationChanger(destinationId) {
@@ -238,6 +240,27 @@ function technologyChanger(technologyId) {
   document.getElementById('technology-name').innerHTML = dest.technology[technologyId].name;
   document.getElementById('aboutTechnology').innerHTML = dest.technology[technologyId].description;
   document.getElementById('technologyImg').src = dest.technology[technologyId].images.portrait;
+
+
+}
+
+
+function showMenu(){
+  var navmenu = document.querySelector(".nav-menu-m");
+  var hamburgerMenu = document.querySelector(".hamburger-menu");
+
+  if(showHamburgerMenu == true){
+    hamburgerMenu.src="./assets/shared/icon-close.svg"
+    navmenu.classList.remove("d-none")
+    console.log(showHamburgerMenu)
+    showHamburgerMenu=false;
+    console.log(showHamburgerMenu)
+  }
+  else if(showHamburgerMenu == false){
+    hamburgerMenu.src="./assets/shared/icon-hamburger.svg"
+    navmenu.classList.add("d-none")
+    showHamburgerMenu= true;
+  }
 
 
 }

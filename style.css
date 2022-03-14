@@ -8,6 +8,12 @@
     src: url(./assets/fonts/Barlow-Light.ttf);
   }
 
+.d-none{
+    display: none !important;
+}
+
+
+
 
 body{
 color: white;
@@ -88,7 +94,7 @@ height: 100%;
     opacity: 0.3;
 }
 
-.hamburger-menu,.hamburger-menu-close{
+.hamburger-menu,.hamburger-menu-close,.nav-menu-m{
     display: none;
 }
 .nav-div{
@@ -445,6 +451,31 @@ margin: 0 auto;
         height: auto;
     }
 
+    .nav-menu-m{
+        display: unset;
+        display: unset;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        width: 130px;
+        backdrop-filter: blur(25px);
+        padding: 10px ;
+    float: right;
+        }
+    .nav-menu-m .nav-links{
+        padding: 3px 0;
+        margin: 10px 0;
+        text-align: right;
+        font-size: 12px;
+        display: block;
+    }
+.nav-menu-m .nav-links.active{
+    border-bottom: 1px solid #D0D6F9;
+}
+
+    .nav-menu-m .nav-links span {
+    font-size: 13px;
+    }
 
 
 
