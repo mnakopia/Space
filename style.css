@@ -30,30 +30,24 @@ margin: 0;
 text-transform: capitalize;
 }
 
+.background{
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
 .index-bg{
 background-image: url(./assets/home/background-home-desktop.jpg);
-background-size: cover;
-background-repeat: no-repeat;
-width: 100%;
-height: 100%;
 }
-
 .destination-bg{
     background-image: url(./assets/destination/background-destination-desktop.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat; 
 }
-
 .crew-bg{
     background-image: url(./assets/crew/background-crew-desktop.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat; 
 }
-
 .technology-bg{
     background-image: url(./assets/technology/background-technology-desktop.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat; 
 }
 
 .headers{
@@ -186,7 +180,6 @@ justify-content: space-between;
 .destination-main{
     display: flex;
     margin: 10%;
-    position: absolute;
 }
 
 
@@ -370,30 +363,25 @@ cursor: pointer;
 
 
 @media only screen and (max-width: 500px) {
-    .index-bg{
+.background{
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+
+       .index-bg{
         background-image: url(./assets/home/background-home-mobile.jpg);
-        background-size: 100%;
-        background-repeat: no-repeat;
-        width: 100%;
-        height: 100%;
         }
-        
         .destination-bg{
-            background-image: url(./assets/destination/background-destination-desktop.jpg);
-            background-size: 100%;
-            background-repeat: no-repeat; 
+            background-image: url(./assets/destination/background-destination-mobile.jpg);
         }
-        
         .crew-bg{
-            background-image: url(./assets/crew/background-crew-desktop.jpg);
-            background-size: 100%;
-            background-repeat: no-repeat; 
+            background-image: url(./assets/crew/background-crew-mobile.jpg);
         }
-        
         .technology-bg{
-            background-image: url(./assets/technology/background-technology-desktop.jpg);
-            background-size: 100%;
-            background-repeat: no-repeat; 
+            background-image: url(./assets/technology/background-technology-mobile.jpg);
         }
 
 .nav-div, .hr{
@@ -479,4 +467,47 @@ margin: 0 auto;
 
 
 
-  }
+
+    .destination-main{
+        display: block;
+        margin: 120px auto 0;
+        text-align: center;
+    }
+
+#destinationImg{
+    width: 50%;
+margin: 0 auto;
+}
+
+.headers{
+    font-size: 20px;
+}
+.destination-img-div, .about-destination {
+    width: 100%;
+}
+
+.destination-menu{
+    justify-content: center;
+    margin: 30px 0 20px;
+}
+
+.destination-name{
+    font-size: 65px;
+}
+
+.dest-info, .crew-member-info {
+font-size: 15px;
+padding:0 15px 10px;
+border-bottom: 1px solid #D0D6F9;
+
+
+}
+.distance-info{
+    display: block;
+    text-align: center;
+}
+.avg-distance, .travel-time-info {
+    width: 100%;
+}
+
+}
