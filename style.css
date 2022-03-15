@@ -472,6 +472,7 @@ margin: 0 auto;
         right: 20px;
         width: 130px;
         backdrop-filter: blur(25px);
+        -webkit-backdrop-filter: blur(25px);
         padding: 10px ;
     float: right;
         }
