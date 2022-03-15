@@ -392,6 +392,10 @@ cursor: pointer;
             background-image: url(./assets/technology/background-technology-mobile.jpg);
         }
 
+.header{
+    z-index: 2;
+}
+
 .nav-div, .hr{
     display: none;
 }
