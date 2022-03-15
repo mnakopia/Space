@@ -316,16 +316,19 @@ margin-top: 50px;
 
 
 .technology-main{
-    margin-left: 130px;
+    position: relative;
+    margin: 10% 0 0 10%;
     display: flex;
-    position: absolute;
-    bottom: 30px;
-    right: 0;
 }
 
 .technology-info{
 display: flex;
-margin-top: 50px;
+flex-direction: row-reverse;
+}
+
+.technology-menu{
+position: absolute;
+left: 0;
 }
 
 .square{
@@ -359,12 +362,22 @@ cursor: pointer;
     margin-top: 10px;
 }
 
+.technology-text{
+    margin-left: 150px;
+}
+
 .terminology{
     color: #D0D6F9;
     font-weight: 100;    
     font-size: 16px;
     margin-bottom: 0;
     margin-top: 40px;
+}
+
+.technology-img-div{
+    position: absolute;
+    right: 0;
+    top: 40px;
 }
 
 
@@ -575,5 +588,62 @@ position: relative;
     border-bottom: none;
 }
 
+
+
+.technology-main{
+    flex-direction: row;
+    display: block;   
+    text-align: center; 
+    margin: 120px auto 0;
+    position: relative;
+}
+
+.technology-info{
+    display: block;
+    flex-direction: row;
+}
+
+
+.technology-img-div{
+    position: static;
+}
+.technology-menu{
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+}
+
+.square{
+    width: 45px;
+    height: 45px;
+    color: #D0D6F9;
+    margin: 20px 20px 20px 0;
+    font-size: 17px;
+}
+
+.technology-text{
+    margin-left: 0;
+}
+
+#technology-name{
+font-size: 25px;
+margin-bottom: 20px;
+}
+.terminology{
+    margin-top: 20px;
+}
+#technologyImg{
+    height: 300px;
+    width: 100%;
+    object-fit: fill;
+}
+
+.about-technology{
+    width: 90%;
+    text-align: center;
+    padding-left: 5%;
+    
+}
 
 }

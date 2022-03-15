@@ -252,9 +252,7 @@ function showMenu(){
   if(showHamburgerMenu == true){
     hamburgerMenu.src="./assets/shared/icon-close.svg"
     navmenu.classList.remove("d-none")
-    console.log(showHamburgerMenu)
     showHamburgerMenu=false;
-    console.log(showHamburgerMenu)
   }
   else if(showHamburgerMenu == false){
     hamburgerMenu.src="./assets/shared/icon-hamburger.svg"
