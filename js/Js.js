@@ -1,6 +1,6 @@
 var jsonInfo;
 async function fetchText() {
-  let response = await fetch('/data.json');
+  let response = await fetch('./data.json');
   let data = await response.json();
 jsonInfo=data;
 }
