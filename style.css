@@ -381,8 +381,256 @@ cursor: pointer;
 }
 
 
+@media only screen and (max-width: 1250px) {
+    .nav-links {
+        white-space: nowrap;
+        font-size: 12px;
+        padding: 25px 0;
+        margin: 0 20px;
+    }
+    .nav-div {
+        width: auto;
+        margin-top: 20px;
+    }
 
-@media only screen and (max-width: 500px) {
+   .hr{
+        display: none;
+    }
+    
+
+    .index-text{
+        display: block;
+        margin: 180px auto 0;
+        text-align: center;
+    
+    }
+    .index-space-text{
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    
+    .index-space-text h1{
+        font-size: 90px;
+    }
+    
+    .index-space-text h3{
+        font-size: 16px;
+    }
+    
+    .index-space-text p{
+        font-size: 14px;
+        max-width: 80%;
+    margin: 0 auto;    
+    }
+    
+    .explore{
+        margin: 30px auto 0;
+        width: 180px;
+        height: 180px;
+    }
+    
+    
+    .explore p{
+        font-size: 22px;
+    }
+    
+    .logo {
+        
+        margin: 30px 25px 0;}
+    
+        .logo-img {
+            width: 40px;
+            height: auto;
+        }
+    
+        .nav-menu-m{
+            display: unset;
+            display: unset;
+            position: absolute;
+            top: 70px;
+            right: 20px;
+            width: 130px;
+            backdrop-filter: blur(25px);
+            -webkit-backdrop-filter: blur(25px);
+            padding: 10px ;
+        float: right;
+            }
+        .nav-menu-m .nav-links{
+            padding: 3px 0;
+            margin: 10px 0;
+            text-align: right;
+            font-size: 12px;
+            display: block;
+        }
+    .nav-menu-m .nav-links.active{
+        border-bottom: 1px solid #D0D6F9;
+    }
+    
+        .nav-menu-m .nav-links span {
+        font-size: 13px;
+        }
+    
+    
+    
+    
+        .destination-main{
+            display: block;
+            margin: 120px auto 0;
+            text-align: center;
+        }
+    
+    #destinationImg{
+        width: 50%;
+    margin: 0 auto;
+    }
+    
+    .headers{
+        font-size: 20px;
+    }
+    .destination-img-div, .about-destination {
+        width: 100%;
+    }
+    
+    .destination-menu{
+        justify-content: center;
+        margin: 30px 0 20px;
+    }
+    
+    .destination-name{
+        font-size: 65px;
+    }
+    
+    .dest-info, .crew-member-info {
+    font-size: 15px;
+    padding:0 15px 10px;
+    border-bottom: 1px solid #D0D6F9;
+    
+    
+    }
+    .distance-info{
+        display: block;
+        text-align: center;
+    }
+    .avg-distance, .travel-time-info {
+        width: 100%;
+    }
+    
+    
+    
+    .crew-main{
+        flex-direction: row;
+    display: block;   
+    text-align: center; 
+    margin: 120px auto 0;
+    position: relative;
+    
+    }
+    .crew-images, .crew-info{
+        width: 100%;
+        text-align: center;
+    }
+    
+    
+    .crew-images img{
+        position: static;
+        height: auto;
+        width: 80%;
+        margin: 50px auto 0;
+        border-bottom: 1px solid #D0D6F9;
+        padding: 0 10%;
+    
+    }
+    .crew-member-info{
+        width: 90%;
+    }
+    #crew-member{
+        font-size: 25px;
+    }
+    #position{
+        margin-top: 50px;
+        font-size: 20px;
+    }
+    
+    .crew-info .headers{
+        position: absolute;
+        top: 0;
+        left: 0;
+    right: 0;
+    }
+    
+    .crew-menu{
+        justify-content: center;
+        margin: 30px auto 20px;
+    }
+    
+    .crew-member-info{
+        border-bottom: none;
+    }
+    
+    
+    
+    .technology-main{
+        flex-direction: row;
+        display: block;   
+        text-align: center; 
+        margin: 120px auto 0;
+        position: relative;
+    }
+    
+    .technology-info{
+        display: block;
+        flex-direction: row;
+    }
+    
+    
+    .technology-img-div{
+        position: static;
+    }
+    .technology-menu{
+        position: relative;
+        display: flex;
+        justify-content: center;
+    
+    }
+    
+    .square{
+        width: 45px;
+        height: 45px;
+        color: #D0D6F9;
+        margin: 20px 20px 20px 0;
+        font-size: 17px;
+    }
+    
+    .technology-text{
+        margin-left: 0;
+    }
+    
+    #technology-name{
+    font-size: 25px;
+    margin-bottom: 20px;
+    }
+    .terminology{
+        margin-top: 20px;
+    }
+    #technologyImg{
+        height: 300px;
+        width: 100%;
+        object-fit: fill;
+    }
+    
+    .about-technology{
+        width: 90%;
+        text-align: center;
+        padding-left: 5%;
+        
+    }
+
+
+}
+
+
+
+@media only screen and (max-width: 600px) {
 .background{
     background-size: cover;
     background-repeat: no-repeat;
@@ -420,231 +668,10 @@ cursor: pointer;
     top: 40px;
 }
 
+
 .index-text{
-    display: block;
     margin: 140px auto 0;
-    text-align: center;
 
-}
-.index-space-text{
-    max-width: 100%;
-}
-
-.index-space-text h1{
-    font-size: 90px;
-}
-
-.index-space-text h3{
-    font-size: 16px;
-}
-
-.index-space-text p{
-    font-size: 14px;
-    max-width: 80%;
-margin: 0 auto;    
-}
-
-.explore{
-    margin: 30px auto 0;
-    width: 180px;
-    height: 180px;
-}
-
-
-.explore p{
-    font-size: 22px;
-}
-
-.logo {
-    
-    margin: 30px 25px 0;}
-
-    .logo-img {
-        width: 40px;
-        height: auto;
-    }
-
-    .nav-menu-m{
-        display: unset;
-        display: unset;
-        position: absolute;
-        top: 70px;
-        right: 20px;
-        width: 130px;
-        backdrop-filter: blur(25px);
-        -webkit-backdrop-filter: blur(25px);
-        padding: 10px ;
-    float: right;
-        }
-    .nav-menu-m .nav-links{
-        padding: 3px 0;
-        margin: 10px 0;
-        text-align: right;
-        font-size: 12px;
-        display: block;
-    }
-.nav-menu-m .nav-links.active{
-    border-bottom: 1px solid #D0D6F9;
-}
-
-    .nav-menu-m .nav-links span {
-    font-size: 13px;
-    }
-
-
-
-
-    .destination-main{
-        display: block;
-        margin: 120px auto 0;
-        text-align: center;
-    }
-
-#destinationImg{
-    width: 50%;
-margin: 0 auto;
-}
-
-.headers{
-    font-size: 20px;
-}
-.destination-img-div, .about-destination {
-    width: 100%;
-}
-
-.destination-menu{
-    justify-content: center;
-    margin: 30px 0 20px;
-}
-
-.destination-name{
-    font-size: 65px;
-}
-
-.dest-info, .crew-member-info {
-font-size: 15px;
-padding:0 15px 10px;
-border-bottom: 1px solid #D0D6F9;
-
-
-}
-.distance-info{
-    display: block;
-    text-align: center;
-}
-.avg-distance, .travel-time-info {
-    width: 100%;
-}
-
-
-
-.crew-main{
-    flex-direction: row;
-display: block;   
-text-align: center; 
-margin: 120px auto 0;
-position: relative;
-
-}
-.crew-images, .crew-info{
-    width: 100%;
-    text-align: center;
-}
-
-
-.crew-images img{
-    position: static;
-    height: auto;
-    width: 80%;
-    margin: 50px auto 0;
-    border-bottom: 1px solid #D0D6F9;
-    padding: 0 10%;
-
-}
-.crew-member-info{
-    width: 90%;
-}
-#crew-member{
-    font-size: 25px;
-}
-#position{
-    margin-top: 50px;
-    font-size: 20px;
-}
-
-.crew-info .headers{
-    position: absolute;
-    top: 0;
-    margin: 0 auto;
-    left: 20%;
-
-}
-
-.crew-menu{
-    justify-content: center;
-    margin: 30px auto 20px;
-}
-
-.crew-member-info{
-    border-bottom: none;
-}
-
-
-
-.technology-main{
-    flex-direction: row;
-    display: block;   
-    text-align: center; 
-    margin: 120px auto 0;
-    position: relative;
-}
-
-.technology-info{
-    display: block;
-    flex-direction: row;
-}
-
-
-.technology-img-div{
-    position: static;
-}
-.technology-menu{
-    position: relative;
-    display: flex;
-    justify-content: center;
-
-}
-
-.square{
-    width: 45px;
-    height: 45px;
-    color: #D0D6F9;
-    margin: 20px 20px 20px 0;
-    font-size: 17px;
-}
-
-.technology-text{
-    margin-left: 0;
-}
-
-#technology-name{
-font-size: 25px;
-margin-bottom: 20px;
-}
-.terminology{
-    margin-top: 20px;
-}
-#technologyImg{
-    height: 300px;
-    width: 100%;
-    object-fit: fill;
-}
-
-.about-technology{
-    width: 90%;
-    text-align: center;
-    padding-left: 5%;
-    
 }
 
 }
